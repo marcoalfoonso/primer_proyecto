@@ -12,8 +12,12 @@ const log = msg => {
 
 //se asegurará de que se cargue la página correctamente antes de que se ejecute alguna acción
 document.addEventListener('DOMContentLoaded',()=>{
-    const el = document.getElementById('log');
-    el.textContent = "Página lista";
+    const el = document.getElementById('btn-saludo');
+    el.addEventListener('click',()=>{
+       const al = document.getElementById('log');
+       al.textContent = "Botón presionado" ;
+    });
+    
 });
 
 
