@@ -1,10 +1,12 @@
 //conectar a un brocker mqtt
-const client = mqtt.connect("wss://9c5b62f9383143779c1c998df33d398c.s1.eu.hivemq.cloud:8883/mqtt",{
+/*const client = mqtt.connect("wss://9c5b62f9383143779c1c998df33d398c.s1.eu.hivemq.cloud:8883/mqtt",{
     clientId: "web_" + Math.random().toString(16).slice(2, 10),
     username: "marcoAlfoonso",
     password: "Lic72@S2",
     clean: true
-});
+});*/
+
+const client = mqtt.connect("test.mosquitto.org");
 
 //muestra en la consola que la conexión fue correcta
 client.on("connect", () => {
