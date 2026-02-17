@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <title>C</title>
+  <title>Chilaquilespuntocom</title>
   <style>
     body {font-family:system-ui,
     sans-serif; }
@@ -17,7 +17,10 @@
     border-radius: 8px; }
   </style>
 
+  <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+
   <script defer src="programaJava.js"></script>
+
 </head>
 
 <body bgcolor="#241616">
@@ -28,6 +31,16 @@
   </p>
 
   <h2>Aqui abajo estará la caja con los botones</h2>
+
+  <div class="caja1">
+    <p style="color:#ebeaea; font-weight:bold;"> Botón para prender o apagra LED.</p>
+    <button id="btn-ledon">Prender</button>
+  </div>
+
+  <div class="caja1">
+    <p style="color:#ebeaea; font-weight:bold;"> Botón para prender o apagra LED.</p>
+    <button id="btn-ledoff">Apagar</button>
+  </div>
 
   <div class="caja1">
     <p style="color:#ebeaea; font-weight:bold;"> Botón de saludo.</p>
